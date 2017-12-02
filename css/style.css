@@ -87,6 +87,7 @@ h1 {
   height: 80px;
   display: block;
   margin: 105px;
+  border-radius: 8px;
 }
 
 .cuadro-3 > p {
