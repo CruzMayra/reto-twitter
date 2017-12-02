@@ -3,7 +3,7 @@
 ## OBJETIVO:
 1. Replicar el newsfeed de Twitter.
 
-![Twitter Weebsite](assets/images/ejemplo.png)
+![Twitter Weebsite](assets/images/ejemplo.jpg)
 
 ## PRIMERA PARTE: MAQUETADO Y ESTILO CSS
 1. El archivo index.html se encuentra enlazado con su hoja de estilos en el archivo style.css.
