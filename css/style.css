@@ -56,7 +56,7 @@ h1 {
   float: right;
 }
 
-.cuadro-2 > textarea {
+.cuadro-2 > form > textarea {
   margin: 20px;
   width: 92%;
   font-family: 'Roboto Mono', monospace;
@@ -69,7 +69,7 @@ h1 {
   margin-top: 0;
 }
 
-.cuadro-2 > button {
+.cuadro-2 > form > input {
   text-align: center;
   margin: 20px;
   width: 120px;
@@ -81,16 +81,19 @@ h1 {
 }
 
 /*Tercera sección*/
-.cuadro-3 {
-  background: #FFF;
-  width: 85%;
-  height: 80px;
-  display: block;
-  margin: 105px;
-  border-radius: 8px;
+cuadro-3 {
+  margin-top:105px;  
 }
 
 .cuadro-3 > p {
+  background: #FFF;
+  width: 80%;
+  height: 80px;
+  display: block;
+  margin: 3% auto;
+  border-radius: 8px;
   padding: 20px;
   font-family: 'Roboto Mono', monospace;
 }
+
+
