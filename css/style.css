@@ -82,7 +82,7 @@ h1 {
 
 /*Tercera sección*/
 cuadro-3 {
-  margin-top:105px;  
+  margin-top:105px;
 }
 
 .cuadro-3 > p {
@@ -95,5 +95,3 @@ cuadro-3 {
   padding: 20px;
   font-family: 'Roboto Mono', monospace;
 }
-
-
