@@ -12,7 +12,7 @@
         <h1>Twitter</h1>
     </nav>
 
-    <div class="container"> 
+    <div class="container">
     <section class="cuadro-1"> <!-- inicio de sección de presentación -->
       <p>Reto de código</p>
       <p>Hola, soy front-end developer Jr.</p>
@@ -24,9 +24,10 @@
 
     <section id="box-tweet" class="cuadro-2"> <!-- inicio de la sección de tweet -->
       <form id="new-tweet" action="index.html" method="post">
-        <textarea name="tweet" rows="6" cols="70"></textarea>
+        <textarea name="tweet" rows="6" cols="70" onKeyDown="count()"></textarea>  <!-- onKeyUp="cuenta()" -->
         <hr>
         <input type="submit" value ="TWEET"></input>
+        <div id="meter">140</div>
       </form>
     </section><!-- fin de la sección de tweet -->
 
