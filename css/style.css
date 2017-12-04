@@ -59,7 +59,8 @@ h1 {
 .cuadro-2 > form > textarea {
   margin: 20px;
   width: 92%;
-  height: 110px;
+  min-height: 110px;
+  /*max-height: auto;*/
   font-family: 'Roboto Mono', monospace;
 }
 
