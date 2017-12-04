@@ -95,3 +95,15 @@ cuadro-3 {
   padding: 20px;
   font-family: 'Roboto Mono', monospace;
 }
+
+.purple { /*clase que se agrega si el número de caracteres es mayor a 120*/
+  color: #3250DE;
+}
+
+.orange { /*clase que se agrega si el número de caracteres es mayor a 130*/
+  color:#FF911D;
+}
+
+.red { /*clase que se agrega si el número de caracteres es mayor a 135*/
+  color: red;
+}
