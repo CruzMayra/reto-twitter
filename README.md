@@ -16,4 +16,4 @@
 
 ## SEGUNDA PARTE: CREANDO UN SITIO INTERACTIVO CON JS
 
-![Diagrama de flujo]<a href="https://ibb.co/knvVfG"><img src="https://image.ibb.co/hDbE7w/flujo_twitter.jpg" alt="flujo_twitter" border="0"></a>
+<a href="https://ibb.co/knvVfG"><img src="https://image.ibb.co/hDbE7w/flujo_twitter.jpg" alt="flujo_twitter" border="0"></a>
