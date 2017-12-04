@@ -11,6 +11,9 @@
 2. El archivo HTML cuenta con dos partes principales: un navegador y un contenedor.
 3. En el contenedor se encuentran 3 secciones, cada una con los elementos correspondientes (p, text-area, button).
 
-![Diagrama Maquetado] <a href="https://ibb.co/knvVfG"><img src="https://image.ibb.co/hDbE7w/flujo_twitter.jpg" alt="flujo_twitter" border="0"></a>
+![Diagrama Maquetado] (assets/images/maquetado-twitter.png)
+
 
 ## SEGUNDA PARTE: CREANDO UN SITIO INTERACTIVO CON JS
+
+![Diagrama de flujo]<a href="https://ibb.co/knvVfG"><img src="https://image.ibb.co/hDbE7w/flujo_twitter.jpg" alt="flujo_twitter" border="0"></a>
