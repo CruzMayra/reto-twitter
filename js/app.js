@@ -16,6 +16,7 @@ function validation(tweetText) { // función para la validación de caracteres
     return false;
   }else {
     newHist(tweetText);
+    tweetContainer.value = "";
   }
 }
 
@@ -81,12 +82,12 @@ var updateTweets = function() { // función que muestra la fecha en función al 
 
   for(var i = 0; i < tweets.length; i++) {
     var tweeted = tweets[i].dataset.tweeted;
-    var sinceWhen = moment(parseInt(tweeted)).format('D-MM-YYYY, h:mm:ss a');
+    var sinceWhen = moment(parseInt(tweeted)).format('hh:mm');
     tweets[i].getElementsByTagName('span')[0].innerHTML = sinceWhen;
   }
 }
 
-//setInterval(updateTweets, 5000);
+setInterval(updateTweets, 2000);
 
 historial.getElementsByTagName('p')[0].dataset.tweeted = Date.now();
 updateTweets();
