@@ -61,22 +61,6 @@ var alertText = function(numType) { // función que da un color determinado seg�
    }
 }
 
-var validKey = function(e){ // funcion que valida la tecla que pulsa el usuario
-  var key = e.keyCode;
-  if(key === 13) {
-    autoSize();
-  }
-}
-
-var autoSize = function() { // función que aumenta el tamaño del textarea al dar enter (/n)
-  tweetContainer.style.height = tweetContainer.scrollHeight + 'px';
-  //console.log('esto funciona');
-}
-
-tweetContainer.addEventListener('keyup',count);
-tweetContainer.addEventListener('keydown',count);
-tweetContainer.onkeyup = validKey;
-
 var updateTweets = function() { // función que muestra la fecha en función al data
   var tweets = historial.getElementsByTagName('p');
 
@@ -91,3 +75,18 @@ setInterval(updateTweets, 2000);
 
 historial.getElementsByTagName('p')[0].dataset.tweeted = Date.now();
 updateTweets();
+
+var validKey = function(e){ // funcion que valida la tecla que pulsa el usuario
+  var key = e.keyCode;
+  if(key === 13) {
+    autoSize();
+  }
+}
+
+var autoSize = function() { // función que aumenta el tamaño del textarea al dar enter (/n)
+  tweetContainer.style.height = tweetContainer.scrollHeight + 'px';
+  //tweetContainer.style.maxHeight = auto;
+}
+
+tweetContainer.addEventListener('keyup', count);
+tweetContainer.addEventListener('keypress', validKey);
