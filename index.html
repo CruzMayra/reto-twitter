@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab" rel="stylesheet"/>
+    <script src="https://unpkg.com/moment@2.19.3/moment.js"></script>
+    <script src="https://unpkg.com/moment@2.19.3/locale/es.js"></script>
     <title>Twitter</title>
   </head>
 
@@ -24,7 +26,7 @@
 
     <section id="box-tweet" class="cuadro-2"> <!-- inicio de la sección de tweet -->
       <form id="new-tweet" action="index.html" method="post">
-        <textarea name="tweet" rows="6" cols="70" onKeyDown="count()" onKeyUp="count()"></textarea>  <!-- onKeyUp="cuenta()" -->
+        <textarea name="tweet" placeholder="¿Qué está pasando?"></textarea>
         <hr>
         <input type="submit" value ="TWEET"></input>
         <div id="meter">140</div>
@@ -32,7 +34,7 @@
     </section><!-- fin de la sección de tweet -->
 
     <section class="cuadro-3"> <!-- inicio de la sección de historial -->
-      <p>Tweet de prueba</p>
+      <p>Tweet de prueba<br><span></span></p>
     </section>
     </div> <!-- fin de la sección de historial -->
 
