@@ -6,7 +6,6 @@ var meter = document.getElementById('meter'); //meter es contador en inglés
 btnSend.onsubmit = function(event){ // función para desencadenar evento
   event.preventDefault();
   var tweetText = tweetContainer.value;
-  //console.log(140-tweetText.length);
   validation(tweetText);
 }
 
@@ -24,7 +23,7 @@ var newHist = function(tweetText) { // función para crear nuevo párrafo con tw
   var newTweet = document.createElement('p');
   var timeSpan = document.createElement('span');
   newTweet.textContent = tweetText;
-  newTweet.dataset.tweeted = Date.now();
+  newTweet.dataset.tweeted = Date.now(); // obteniendo el data con la fecha
   newTweet.appendChild(document.createElement('br'));
   newTweet.appendChild(timeSpan);
   historial.appendChild(newTweet);
@@ -77,17 +76,17 @@ tweetContainer.addEventListener('keyup',count);
 tweetContainer.addEventListener('keydown',count);
 tweetContainer.onkeyup = validKey;
 
-var updateTweets = function() {
+var updateTweets = function() { // función que muestra la fecha en función al data
   var tweets = historial.getElementsByTagName('p');
 
   for(var i = 0; i < tweets.length; i++) {
     var tweeted = tweets[i].dataset.tweeted;
-    var haceCuanto = moment(parseInt(tweeted)).fromNow();
-    tweets[i].getElementsByTagName('span')[0].innerHTML = haceCuanto;
+    var sinceWhen = moment(parseInt(tweeted)).format('D-MM-YYYY, h:mm:ss a');
+    tweets[i].getElementsByTagName('span')[0].innerHTML = sinceWhen;
   }
 }
 
-setInterval(updateTweets, 5000)
+//setInterval(updateTweets, 5000);
 
-historial.getElementsByTagName('p')[0].dataset.tweeted = Date.now()
-updateTweets()
+historial.getElementsByTagName('p')[0].dataset.tweeted = Date.now();
+updateTweets();
