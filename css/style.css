@@ -64,8 +64,9 @@ h1 {
   font-family: 'Roboto Mono', monospace;
 }
 
-.cuadro-2 > hr {
-  width: 93%;
+#box-tweet > hr {
+  display: flex;
+  width: 80%;
   height: 1px;
   background: #7DA2B3;
   margin-top: 0;
@@ -108,4 +109,12 @@ cuadro-3 {
 
 .red { /*clase que se agrega si el número de caracteres es mayor a 135*/
   color: red;
+}
+
+#meter {
+  float: right;
+  margin: 30px 20px ;
+  padding: 10px;
+  font-weight: 500;
+  font-family: 'Roboto Mono', monospace;
 }
